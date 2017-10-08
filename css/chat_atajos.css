@@ -1,0 +1,29 @@
+table,td {
+		/*border: 1px solid black;*/
+	}
+
+	#descri {
+		background: rgba(0,0,0,0.4);
+		width: 260px;height: auto;
+	}
+
+
+	/*estilo para las horas de los mensajes*/
+
+	#hora_chat{
+font-size: 9px;
+color: white;
+float: right;
+background: rgba(0,0,0,0.6);
+padding: 3px;
+border-radius: 10px;
+transform: translateY(50%);
+
+	}
+
+
+	#noticiadm{
+		/*opacity: 0;9*/
+		
+		
+	}

@@ -1,0 +1,408 @@
+
+body{
+	background-color: #161619;
+	box-sizing: border-box;
+	min-height: 540px;
+	overflow: hidden;
+}
+
+.nav{
+	z-index: 3;
+	left: 0;
+	top: 0;
+	background-color:black; 
+	box-sizing: border-box;
+	padding: 2% 1%;
+	width: 100%;
+}
+
+.nav > div {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  	box-sizing: border-box;
+}
+
+.nav > div > span {
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  padding: 2%;
+  	box-sizing: border-box;
+}
+
+.max{
+	position: fixed;
+	padding-top: 8%;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: black;
+}
+
+.nave2_max{
+   color: black;
+}
+
+.nav2_max p{
+	background-color: green;
+	display: block;
+	padding: 5%;
+	margin: 1%;
+}
+
+#cuerpo{
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     min-height: 550px;
+     padding: 0;
+     background-color: #161619;
+}
+
+#perfil{
+   background-color: #1C1C1F;
+   height: 100%;
+   padding: 1% 0px ;
+   overflow: hidden;
+}
+
+#logo{
+	width:100%;
+	color: white;
+	padding-top: 10%;
+	font-family: monospace;
+	display: flex;
+	justify-content:center;
+	align-content:center;
+    box-sizing:border-box;
+}
+
+
+
+
+.navegador{
+	width: 100%;
+    box-sizing:border-box;
+}
+
+
+
+.nav_ico{
+   width: 100%;
+   margin-top: 10%;
+   position: relative;
+   text-align: center;
+   cursor: pointer;
+   align-items: center;
+   box-sizing:border-box;
+   color: silver;
+   padding: 2%;
+   transition:all .4s ease;
+   -webkit-transition:all .4s ease;
+   -moz-transition:all .4s ease;
+}
+
+.icomos{
+   font-size: 1.6em;
+}
+
+.efecto{      
+	position: absolute;
+	height: 100%;
+	width: 5%;
+	background-color: #43E515;
+	opacity: 0;
+	transition:all .4s ease;
+	-webkit-transition:all .4s ease;
+	-moz-transition:all .4s ease;
+}
+
+.nombre{
+	font-size: 0.8em;
+}
+
+
+.nav_ico:hover p {
+	opacity: 0.4;
+}
+
+.nav_ico:hover .efecto{
+	opacity: 1;
+}
+
+
+
+.mini_perfil{
+  bottom: 2%;
+  width: 100%;
+  box-sizing:border-box;
+  position: absolute;
+}
+
+.monedas{
+   width: 100%;
+   display: flex;
+   padding: 2%;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 15%;
+   	box-sizing: border-box;
+}
+
+
+.monedas img {
+	width: 30px;
+	height: 30px;
+}
+
+.con_monedas{
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.con_cantidad{
+	display: flex;
+	height: 100%;
+	box-sizing: border-box;
+	color:silver;
+	justify-content: center;
+	align-items: center;
+}
+
+.cas{
+	position: absolute;
+	padding: 3% 10%;
+	border-radius: 10px;
+	margin-top: 0%;
+	margin-left: 0%;
+    color: white;
+    opacity: 0;
+	background-color: red;
+	transition: all .4s ease;
+}
+
+.monedas:hover  .cas{
+     opacity: 1;
+     margin-top: -40%;
+}
+
+
+.con_cantidad p{
+  margin-top: 20%;
+}
+
+.usuario{
+	cursor: pointer;
+}
+
+ .mini_perfil .usuario img{
+ 	width: 60px;
+ 	height:60px;
+ 	border-radius: 50%;
+ }
+
+ .usuario p{
+ 	color: white;
+ }
+
+ .usuario:hover p{
+ 	text-decoration: underline;
+ 	text-transform: capitalize;
+ }
+
+
+
+.mini_perfil  .ajustes span{
+	text-align: center;
+	font-size: 2em;
+	cursor: pointer;
+     color: white;
+}
+
+
+
+
+
+
+
+
+#navegar{
+   height: 100%;
+   padding: 0;
+}
+
+
+
+iframe {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+
+}
+
+
+
+
+
+
+
+#reproductor{
+   height: 100%;
+   overflow:hidden;
+   padding: 0;
+   background-color: #1C1C1F;
+   position: relative;
+}
+
+#reproductor_musica{
+	width: 100%;
+	height: auto;
+	background-color: black;
+}
+
+.reproductor_img img{
+	width: 100%;
+	height: 200px;
+}
+
+.descripcion {
+	text-align: center;
+	text-transform: capitalize;
+	 width: 100%;
+	 font-size: 0.9em;
+	 color: white;
+}
+
+.descripcion marquee{
+	 width: 80%;
+}
+
+.avance{
+   width: 80%;
+   margin-left: 10%;
+   position: relative;
+
+}
+
+.avance progress{
+	width: 100%;
+     height: 4px;
+     color: red;
+     border: solid 0px black;
+     border-radius: 10px;
+}
+
+.avance input[type = range]{
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	 cursor: pointer;
+}
+
+.controles{
+	text-align: center;
+	width: 100%;
+	font-size: 1.2em;
+	color: white;
+	box-sizing: border-box;
+}
+
+
+.controles span{
+	text-align: center;
+    padding:1%;
+    cursor: pointer;
+}
+
+.extras{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding:0 2% 5%;
+	font-size: 1.5em;
+	color: white;
+	box-sizing: border-box;
+}
+
+
+.extras span{
+
+   text-align: center;
+    cursor: pointer;
+    padding: 1%;
+}
+
+.con{
+		display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	display: inline-block;
+}
+
+.con input {
+	width: 100%;
+	bottom: 0;
+	opacity: 0;
+	position: absolute;
+
+}
+
+
+.con progress{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 4px;
+}
+
+
+.vola{
+	display: inline-block;
+	width: 50%;
+	position: relative;
+}
+
+
+
+.con span{
+	padding: 1%;
+}
+
+
+.icomos span {
+	margin:0 3%;
+}
+
+
+.vola input {
+	cursor: pointer;
+}
+
+.footer{
+	width: 100%;
+	position: absolute;
+	bottom: 3%;
+	color: white;
+	font-size: 12px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  #cuerpo{
+  	height: 90%;
+  }
+}

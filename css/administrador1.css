@@ -1,0 +1,243 @@
+*::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+  border-radius: 2px;width: 2px;
+  background-color:rgba(0,0,0,0.0);
+}
+
+*::-webkit-scrollbar
+{
+  width: 2px;
+  background-color: rgba(0,0,0,0);
+}
+
+*::-webkit-scrollbar-thumb
+{
+  border-radius: 2px;width: 2px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.3);
+}
+
+#des{
+	text-transform: capitalize;
+}
+body {
+		padding: 0;
+		margin: 0;
+		overflow-y: hidden;
+
+	}
+
+#contenedor{
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	position: absolute;
+	background-image: url('http://www.gestiondemociones.com/wp-content/uploads/2012/11/CONSTELACIONES-FAMILIARES.jpg');
+	background-size: 100% 100%;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	overflow-y:scroll; 
+}
+
+header {
+	height: 20%;
+}
+
+.raw{
+	 padding: 2%;
+	
+}
+
+section{
+ margin-bottom: 3%;
+ padding: 2%;
+   background-color: #262626;
+}
+
+section > article >.table{
+  margin: 1%;
+  min-height: 300px;
+  min-width: 700px;
+
+  font-size: 1em;
+}
+
+ #are{
+ 	color:white;
+ 	width: 100%;
+ 	height: 100%;
+ 	position: relative;
+ 	padding: 0px;
+}
+.loadin{
+	width: 100%;
+	height: 100%;
+}
+
+aside {
+  padding: 0px;
+  height: 100%;
+  margin-bottom: 2%;
+ overflow-y:scroll;
+}
+
+
+.formu{
+ padding: 2% 2%;
+ width: 100%;
+ margin: 0px;
+}
+
+.formu > div > div {
+	color: white;
+}
+
+.imad{
+	height: 100%;
+	padding: 2%;
+}
+
+.imad > img{
+	width: 100%;
+	height: 100%;
+
+}
+
+.con_per{
+	height: 100%;
+}
+
+header{
+	margin-top: 1%;
+	color: white;
+	background: rgba(150,150,150,0.5);
+}
+
+header p {
+	font-size: 1em;
+}
+
+header h3 {
+	font-size: 1.3em;
+}
+
+header strong {
+	font-size: 1.3em;
+}
+
+header a {
+	font-size: 1em;
+	text-transform: capitalize;
+}
+
+.nax{
+	width: 100%;
+	background:black;
+    padding: 2%;
+	min-height:70px; 
+	color: white;
+	max-height: 70px;
+	z-index: 1;
+	box-sizing:border-box;
+}
+
+.nax p {
+	display: inline-block;
+	font-size: 1em;
+    padding: 2%;
+    box-sizing:border-box;
+}
+
+.nax strong {
+	padding: 2%;
+	font-size: 1.2em;
+	box-sizing:border-box;
+}
+
+.poola{
+  float: right;
+}
+
+
+.despli{
+
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	color: white;
+	background-color: black;
+	left: 0;
+	padding: 0% 4%;
+	height: 0px;
+	overflow: hidden;
+}
+
+p.icom{
+ float: right;
+ font-size: 1.5em;
+ cursor: pointer;
+}
+
+.de{
+	 -webkit-animation: des 2s;
+    animation: des 2s;
+    -webkit-animation-delay: 0s ;
+    animation-delay: 0s ;
+    animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.su{
+    -webkit-animation: subi 2s;
+    animation: subi 2s;
+    -webkit-animation-delay: 0s ;
+    animation-delay: 0s ;
+    animation-iteration-count:1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+
+
+@keyframes des{
+
+	0%{height: 0px ;}
+     100%{height: 100%; }
+}
+
+
+@-webkit-keyframes des {
+   0%{height: 0px ; }
+     100%{height: 100%; }
+}
+
+@keyframes subi{
+0%{height: 100% }
+     100%{height: 0px; }
+}
+
+
+@-webkit-keyframes subi {
+    0%{height:100% }
+     100%{height: 0px; }
+}
+
+
+
+
+
+@media screen and (max-width : 668px){
+
+}
+
+@media screen and (max-width: 400px) {
+
+
+}
+@media screen and (max-width: 992px) {
+
+}
+

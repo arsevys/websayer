@@ -1,0 +1,115 @@
+
+*{
+	box-sizing: border-box;
+
+	padding: 0;
+	margin:0;
+}
+
+ #cuerpomusica{
+   position: absolute;
+   width: 100%;
+   overflow:auto;
+   padding: 0;
+   background-color: red;
+   height: 100%;
+   background-color: #21262E;
+ }
+
+
+.detalles {
+	background-image: url('../imagenes/fondos/banner-buscar-musica.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+    position: relative;
+	width: 100%;
+	min-height: 30%;
+	height: auto;
+	max-height: 600px;
+   max-width: 1500px;
+   border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+.descripcion_detalle{
+	position: absolute;
+	overflow:auto;
+	width: 100%;
+	height: 100%;
+}
+
+.descrip{
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	left: 0;
+
+	top: 0;
+}
+
+.descripcion_detalle h4 {
+	text-align: center;
+		color: white;
+}
+
+.descripcion_detalle strong {
+	text-align: left;
+		color: white;
+}
+
+.decrip p {
+		color: white;
+}
+
+
+.busca{
+	height: 10%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 3%;
+}
+
+
+
+
+#resultado{
+	margin: auto;
+	max-width: 1500px;
+	   border-radius: 0px 0px 10px 10px;
+		   	background-color: rgba(0,0,0,0.5);
+		   	padding: 3%;
+		   	height: auto;
+		   	overflow-y: scroll;
+		   	box-sizing: border-box;
+		   	 width: 100%;
+}
+
+table{
+	color: white;
+	overflow-y: scroll;
+}
+
+.botones{
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .table-responsive{
+  	border: 1px solid rgba(0,0,0,0);
+  }
+ #resultado{padding: 0;}
+  #cuerpomusica{
+  	padding: 0px;
+  }
+}

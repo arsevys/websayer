@@ -1,0 +1,81 @@
+
+body {
+	background: #262626;
+}
+
+
+#contenedorpregunta{
+	width: 73%;
+	height: 550px;
+	margin-left: 2%;
+	background: red;
+	float: left;
+	background-image: url('../../imagenes/BD_cuestionario/collage.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#usuario {
+	width:24%;
+	height:590px;
+	background: rgba(0,0,0,0.4);
+	float: left;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#imgmonedas {
+	float: left;
+	margin-right: 2%;
+	margin-left: 30%;
+}
+
+#mone {
+	font-size: 25px;
+	color: white;
+}
+#presentacion {
+
+	width: 200px;
+	height: 150px;
+	margin-left: 24%;
+	margin-top: 10%;
+
+}
+
+.empe {
+	margin-left: 50%;
+}
+
+#preguntauno {
+	margin-left: 25%;
+	width: 40%;
+	height: 450px;
+	background: rgba(255,255,255,0.7);
+	padding: 10px;
+	border-radius: 15px;
+
+}
+
+#mal{
+	color: red;
+font-weight:5px;
+font-size: 20px;
+}
+
+#bien{
+	color: green;
+	font-size: 20px;
+}
+table ,td
+{
+	background: rgba(255,255,255,0.4);
+	border:1px solid white;
+}
+#cara {
+	float: left;
+	margin-left: 25%;
+}

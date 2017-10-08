@@ -1,0 +1,630 @@
+
+
+#base{
+   background-color: #21262E;
+   position: absolute;
+   width: 100%;
+   padding: 1% 2%;
+   overflow:auto;
+   height: 100%;
+}
+
+
+.img_carrucel{
+  height: 25%;
+  display: none;
+  min-height: 140px;
+}
+
+.img_carrucel img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.carrucel{
+   height: 30%;
+   overflow: hidden;
+   position: relative;
+   padding: 0px;
+   box-sizing: border-box;
+   max-height: 400px;
+}
+
+
+.conter{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	transform: translateX(-100%);
+}
+
+.uno{
+ 
+}
+
+.conter img {
+	width: 100%;
+	height: 100%;
+}
+
+.bot {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	float: left;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.7);
+	transition: all .4s ease ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.der{
+	right: 0;
+}
+.bot{
+	text-align: center;
+	color: white;
+	font-size: 2em ;
+	padding: 2%;
+}
+
+.carrucel:hover >.bot {
+  opacity: 1;
+}
+
+
+
+.novedad_artistas{
+	font-family: monospace;
+	margin: 5% 0%;
+	border-bottom:solid 1px white;
+}
+
+.artistas_titulo {
+
+    box-sizing: border-box;
+    font-size: 1.6em;
+    padding: 1%;
+    color: white;
+}
+
+.artista_titulo span {
+	float: left;
+}
+
+.artista_flechas{
+    box-sizing: border-box;
+    font-size: 1.6em;
+    padding: 1%;
+    color: white;
+    text-align: center;
+}
+
+.flechas{
+	cursor: pointer;
+	float: right;
+	margin-right: 2%;
+}
+
+
+
+.artistas_new{
+	width: 100%;
+	height: 40%;
+	margin-bottom: 5%;
+	min-height: 300px;
+	box-sizing: border-box;
+	overflow:hidden;
+	overflow-x: auto;
+	position: relative;
+}
+
+.artista_single{
+	overflow:hidden;
+	height: 100%;
+    box-sizing: border-box;
+}
+
+.artista{
+	width: 20%;
+    margin-left: 4%;
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    color: rgba(250,250,250,0.7);
+    background-color: #222326;
+}
+
+.sube{
+    animation-name: adela;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+@keyframes adela {
+	0%{transform: translateY(0) rotateX(0deg) rotateY(0deg);	margin-bottom: 3%;}
+	50%{transform: translateY(-50%) rotateX(90deg) rotateY(30deg) ;}
+	100%{transform: translateY(-100%) rotateX(0deg) rotateY(0deg); 	margin-bottom: 0%;}
+}
+@-webkit-keyframes adela{
+	0%{transform: translateY(0) rotateX(0deg) rotateY(0deg); 	margin-bottom: 3%;}
+	50%{transform: translateY(-50%) rotateX(90deg) rotateY(30deg);}
+	100%{transform: translateY(-100%) rotateX(0deg) rotateY(0deg);	margin-bottom: 0%;}
+}
+
+.baja{
+      animation-name: adelatra;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+@keyframes adelatra  {
+	0%{transform: translateY(-100%) rotateX(0deg) rotateY(0deg);	margin-bottom: 0%;}
+	50%{transform: translateY(-50%) rotateX(90deg) rotateY(30deg) ;}
+	100%{transform: translateY(0%) rotateX(0deg) rotateY(0deg); 	margin-bottom: 3%;}
+}
+@-webkit-keyframes adelatra  {
+	0%{transform: translateY(-100%) rotateX(0deg) rotateY(0deg);	margin-bottom: 0%;}
+	50%{transform: translateY(-50%) rotateX(90deg) rotateY(30deg) ;}
+	100%{transform: translateY(0%) rotateX(0deg) rotateY(0deg); 	margin-bottom: 3%;}
+}
+
+
+.img_artista{
+   width: 100%;
+   height: 50%;
+}
+
+.img_artista img{
+	width: 100%;
+	height: 100%;
+}
+
+.descriccion_artista{
+	overflow: auto;
+	padding: 2% 4% ;
+	height: 50%;
+}
+
+
+.descriccion_artista h4{
+		cursor: pointer;
+   font-size: 1em;
+}
+
+.descriccion_artista h4:hover  {
+   text-decoration: underline;
+}
+
+.descriccion_artista p{
+   font-size: 0.8em;
+}
+
+
+
+.grupo_generos{
+     width: 100%;
+     height: 150%;
+}
+
+
+
+.genero{
+	width: 23%;
+	margin: 1%;
+	height: 15%;
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+
+.genero img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.detalles_genero{
+	top: 0;
+	left: 0;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.5);
+}
+
+
+.logo_genero{
+	text-align: center;
+	color: white;
+	width: 100%;
+	height: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+.nom_genero{
+	width: 100%;
+	height: 50%;
+	color: white;
+	text-align: center;
+}
+
+.genero:hover  > div >div > h4{
+	text-decoration: underline;
+}
+
+
+#mas{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+}
+
+
+#masima{
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+	position: relative;
+	transform: translate(100%);
+
+}
+
+
+
+
+#contergold{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	top: 0;
+	left: 0;
+}
+
+.adios{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.animaciondos{
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+
+
+
+.gold{
+	animation-name: gold;
+	-webkit-animation-name: gold;
+	-moz-animation-name: gold;
+}
+.golder{
+	animation-name: golder;
+	-webkit-animation-name: golder;
+	-moz-animation-name: golder;
+}
+@keyframes golder {
+	0%{transform: translateX(25%);}
+	100%{transform: translateX(100%);}
+}
+@-webkit-keyframes golder {
+	0%{transform: translateX(25%);}
+	100%{transform: translateX(100%);}
+}
+
+
+@keyframes gold {
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(25%);}
+}
+@-webkit-keyframes gold {
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(25%);}
+}
+
+
+
+.mueveuno{
+	animation-name: mueveunos;
+	-webkit-animation-name: mueveunos;
+	-moz-animation-name: mueveunos;
+}
+
+.muevedos{
+	animation-name: muevedos;
+	-webkit-animation-name: muevedos;
+	-moz-animation-name: muevedos;
+}
+
+.regresa{
+	animation-name: mueve;
+	-webkit-animation-name: mueve;
+	-moz-animation-name: mueve;
+}
+
+.atrados{
+	animation-name: atrados;
+	-webkit-animation-name: atrados;
+	-moz-animation-name: atrados;
+}
+
+.atrauno{
+	animation-name: atraunos;
+	-webkit-animation-name: atraunos;
+	-moz-animation-name: atraunos;
+
+}
+
+.atra{
+	animation-name: atras;
+	-webkit-animation-name: atras;
+	-moz-animation-name: atras;
+}
+
+
+
+@keyframes mueveunos {
+	0%{transform: translateX(0%) scale(1);}
+	100%{transform: translateX(100%) scale(0);}
+}
+
+
+@keyframes muevedos {
+	0%{transform: translateX(-100%) scale(0);}
+	100%{transform: translateX(0%)  scale(1);}
+}
+
+@keyframes mueve {
+	0%{transform: translateX(-100%);}
+	100%{transform: translateX(-100%);}
+}
+
+
+@keyframes atraunos {
+	0%{transform: translateX(0%) scale(1);}
+	100%{transform: translateX(-100%) scale(0);}
+}
+
+
+@keyframes atrados {
+	0%{transform: translateX(100%) scale(0);}
+	100%{transform: translateX(0%) scale(1);}
+}
+
+@keyframes atras {
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(100%);}
+}
+
+
+@-webkit-keyframes mueveunos {
+	0%{transform: translateX(0%) scale(1);}
+	100%{transform: translateX(100%) scale(0);}
+}
+
+
+@-webkit-keyframes muevedos {
+	0%{transform: translateX(-100%) scale(0);}
+	100%{transform: translateX(0%) scale(1);}
+}
+
+@-webkit-keyframes mueve {
+	0%{transform: translateX(-100%);}
+	100%{transform: translateX(-100%);}
+}
+
+
+@-webkit-keyframes atraunos {
+	0%{transform: translateX(0%) scale(1);}
+	100%{transform: translateX(-100%) scale(0);}
+}
+
+
+@-webkit-keyframes atrados {
+	0%{transform: translateX(100%) scale(0);}
+	100%{transform: translateX(0%) scale(1);}
+}
+
+@-webkit-keyframes atras {
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(100%);}
+}
+
+
+
+.animacion{
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-timing-function: linear;
+	animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	animation-delay: 0s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+}
+
+.trasla{
+	animation-name: trasla;
+	-webkit-animation-name: trasla;
+	-moz-animation-name: trasla;
+}
+
+.trasldos{
+	animation-name: traslados;
+	-webkit-animation-name: traslados;
+	-moz-animation-name: traslados;
+}
+
+.atrasa{
+	animation-name: atrasa;
+	-webkit-animation-name: atrasa;
+	-moz-animation-name: atrasa;
+}
+
+.atrasados{
+	animation-name: atrasados;
+	-webkit-animation-name: atrasados;
+	-moz-animation-name: atrasados;
+}
+
+@keyframes trasla {
+	0%{transform: translateX(0%);}
+	100%{transform: translateX(-100%);}
+}
+
+
+@-webkit-keyframes trasla {
+	0%{transform: translateX0%);}
+	100%{transform: translateX(-100%);}
+}
+
+@keyframes traslados {
+	0%{transform: translateX(-100%);}
+	100%{transform: translateX(0%);}
+}
+
+
+@-webkit-keyframes traslados {
+	0%{transform: translateX(-100%);}
+	100%{transform: translateX(0%);}
+}
+
+
+
+@keyframes atrasa {
+	0%{transform: translateX(0%);}
+	100%{transform: translateX(100%);}
+}
+
+
+@-webkit-keyframes atrasa {
+	0%{transform: translateX(0%);}
+	100%{transform: translateX(100%);}
+}
+
+@keyframes atrasados {
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(0%);}
+}
+
+
+@-webkit-keyframes atrasados {
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(0%);}
+}
+
+
+
+@media screen and (max-width: 600px) {
+     .novedad_artistas{
+          max-height: 40px;
+     }
+
+      .artistas_titulo{
+                font-size: 1.3em;          
+      }
+
+      .artista_flechas{
+                font-size: 1.8em;          
+      }
+
+     .presa{
+     	font-size: 10px;
+     }
+
+
+     .artistasnew{
+          height: 40%;
+     }
+
+	.des h4{
+        font-size: 0.8em;
+	}
+	.des p{
+        font-size: 0.5 em;
+	}
+
+      
+   .artista{
+   	width: 45%;
+   	margin-bottom: 3%;
+   	animation-name: none ;
+   }
+
+   .grupo_genero{
+   	height: 200%;
+   }
+  
+
+  .artista_single{
+	overflow:auto;
+   }
+
+   .artista_flechas {
+	display: none;
+   }
+
+}
+
+
+@media screen and (max-width: 998px) {
+ .genero{
+     	width: 31.3%;
+     	margin: 1%;
+ }
+}
+
+
+@media screen and (max-width: 768px) {
+ .genero{
+         width: 48%;
+         margin:1%;
+         min-height: 100px;
+ }
+}
